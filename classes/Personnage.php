@@ -19,7 +19,18 @@ class Personnage {
     // Méthode permettant de déplacer le personnage vers la droite
     public function walkRight() {
         $this->x += 1;
-
+    }
+    //Déplace le personnage vers la gauche
+    public function walkLeft () {
+        $this->x -= 1;
+    }
+    //déplace le personnage vers le haut
+    public function walkTop () {
+        $this->y -= 1;
+    }
+    //Déplace le personnage vers le bas
+    public function walkBottom () {
+        $this->y += 1;
     }
 
     // Setter permettant de définir l'attribut privé id
@@ -27,8 +38,17 @@ class Personnage {
         $this->id = $id;
     }
 
-    // Getter permettant de retourner l'attribut privé id
+    // Getter permettant de retourner le nom
     public function getId() {
         return $this->id;
+    }
+
+    public function setName($nom) {
+        $this->nom = $nom;
+    }
+
+    // Getter permettant de retourner le nom
+    public function getName() {
+        return $this->nom;
     }
 } 

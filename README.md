@@ -17,8 +17,6 @@ setter ou getter.
 
 
 
-
-
 Théorie :
 
 La programmation orienté objet en PHP vous permet de rendre votre code plus facile à modifier et de moins vous répéter dans
